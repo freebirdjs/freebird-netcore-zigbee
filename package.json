@@ -1,0 +1,24 @@
+{
+  "name": "freebird-netcore-zigbee",
+  "version": "0.0.0",
+  "description": "Freebird netcore of zigbee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freebirdjs/freebird-netcore-zigbee.git"
+  },
+  "author": "Jack Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freebirdjs/freebird-netcore-zigbee/issues"
+  },
+  "homepage": "https://github.com/freebirdjs/freebird-netcore-zigbee#readme",
+  "dependencies": {
+    "busyman": "^0.2.1",
+    "freebird-base": "^0.2.7",
+    "zigbee-shepherd": "^0.2.0"
+  }
+}
