@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/freebirdjs/freebird-netcore-zigbee#readme",
   "dependencies": {
-    "busyman": "^0.2.1",
-    "freebird-base": "^0.2.7",
-    "zigbee-shepherd": "^0.2.0"
+    "busyman": "^0.3.0",
+    "freebird-base": "^0.4.0",
+    "zigbee-shepherd": "^0.2.2"
   }
 }
