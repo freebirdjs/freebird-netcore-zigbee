@@ -21,5 +21,11 @@
     "freebird-base": "^0.4.6",
     "zcl-id": "^0.3.0",
     "zigbee-shepherd": "^0.2.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "q": "^1.4.1",
+    "sinon": "^1.17.7",
+    "ziee": "^0.3.0"
   }
 }
