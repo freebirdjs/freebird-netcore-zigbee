@@ -63,7 +63,7 @@ var rawDev = {
 
 var rawGad = {
     profId: 'HA',
-    classId: helper.getGadClassId('genOnOff'),
+    classId: helper.getGadClassId('smartPlug', 'genOnOff'),
     auxId: 'actuation/8/genOnOff',
     attrs: {
         onOff: 0
@@ -80,7 +80,7 @@ var zb_dev = new Device({
     zb_ep_8 = new Endpoint(zb_dev, {
         profId: 260,
         epId: 8,
-        devId: 0,
+        devId: 81,
         inClusterList: [ 0, 1, 3 ],
         outClusterList: [ 3, 6 ]
     });
