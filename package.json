@@ -1,6 +1,6 @@
 {
   "name": "freebird-netcore-zigbee",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Freebird netcore of zigbee",
   "main": "index.js",
   "scripts": {
