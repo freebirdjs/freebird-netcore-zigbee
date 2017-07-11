@@ -63,8 +63,8 @@ var rawDev = {
 
 var rawGad = {
     profId: 'HA',
-    classId: helper.getGadClassId('smartPlug', 'genOnOff'),
-    auxId: 'actuation/8/genOnOff',
+    classId: helper.getGadClassId(81),
+    auxId: 'pwrCtrl/8',
     attrs: {
         onOff: 0
     }
@@ -149,7 +149,7 @@ describe('Cook Functional Check', function() {
         zbCore.cookRawGad(gad, rawGad, function (err, brewedGad) {
             var panelInfo = {
                     enabled: false,
-                    classId: 'actuation',
+                    classId: 'pwrCtrl',
                     profile: 'HA'
                 },
                 attrInfo = {
@@ -399,9 +399,9 @@ describe('Handlers Check', function() {
             }),
             commitGadStub = sinon.stub(zbCore, 'commitGadIncoming', function (permAddr, auxId, rawGad) {
                 expect(permAddr).to.be.equal('0x00124b0001ce4beb');
-                expect(auxId).to.be.equal('actuation/8/genOnOff');
+                expect(auxId).to.be.equal('pwrCtrl/8');
                 expect(rawGad.profId).to.be.equal('HA');
-                expect(rawGad.classId).to.be.equal('actuation');
+                expect(rawGad.classId).to.be.equal('pwrCtrl');
                 commitGadStub.restore();
 
                 gadIncoming = true;
@@ -427,7 +427,7 @@ describe('Handlers Check', function() {
     it('devChangeHdlr()', function (done) {
         var commitGadReportStub = sinon.stub(zbCore, 'commitGadReporting', function (permAddr, auxId, attrs) {
                 expect(permAddr).to.be.equal('0x00124b0001ce4beb');
-                expect(auxId).to.be.equal('actuation/8/genOnOff');
+                expect(auxId).to.be.equal('pwrCtrl/8');
                 expect(_.isEqual(attrs, { onOff: 1 })).to.be.true;
                 commitGadReportStub.restore();
 
